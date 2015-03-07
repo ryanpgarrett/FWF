@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Garrett - Week 1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app>
+    <h1>Week 1 Data Binding</h1>
+    <div ng-controller="ShopController">
+        <input type="text" ng-model="itemName" />
+            <input type="submit" ng-click="addItem()" />
+            <p>Hello, {{itemName}}</p>
+            <ul>
+                <li ng-repeat="item in Array">{{ item }}<button ng-click="deletedItem">X</button></li>
+            </ul>
+    </div>
+    
+</body>
+</html>
